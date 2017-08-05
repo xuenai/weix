@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>page1</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="../css/animation.min.css">
+	<link rel="stylesheet" href="../css/mainP1.css">
+
+	<script>
+       (function (doc, win) {
+            var docEl = doc.documentElement,
+           // orientationchange 事件 用来监听手机屏幕的反转
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;//(window.innerWidth);UC 或者QQ 安卓4.0 以下原生浏览器下面是没有
+              if (!clientWidth) return;     
+               docEl.style.fontSize = 100 * (clientWidth / 1080) + 'px';
+            };
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          //DOMContentLoaded dom 加载完成，onload 有什么区别 dom css js OK 才执行的
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+	</script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <!-- 第一页 -->
+        <div class="swiper-slide">
+            <!-- 船 -->
+            <img class='chuan' src="../img/1chuan.png" />
+            <!-- 向下滑动 -->
+            <div class="slidp">
+                <img class='active' src="../img/slidp.png">
+                <img src="../img/slidp2.png">
+                <img src="../img/slidp2.png">
+            </div>
+            <!-- 大三角 -->
+            <img src='../img/1sanj.png' class="ani sanj" swiper-animate-effect="zoomInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"/>
+            <!-- 许多小三角 -->
+            <img src='../img/1pt.png' class="ani pt" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s"/>
+
+            <img src='../img/fly.png' class="ani fly" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+            <img src='../img/zhusu.png' class="ani zhusu" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+            <img src='../img/meishi.png' class="ani meishi" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+            <img src='../img/wuyu.png' class="ani wuyu" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+            <!-- 免费澳洲文字 -->
+            <img src='../img/aozhou.png' class="ani aozhou" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+            <!-- 等你免费文字 -->
+            <img src='../img/dengni.png' class="ani dengni" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+            <!-- yu -->
+
+        </div>
+
+        <!-- 第二页 -->
+        <div class="swiper-slide">
+          <img class='chuan' src="../img2/chuan.png">
+          <!-- 向下滑动 -->
+          <div class="slidp">
+              <img class='active' src="../img2/slidp.png">
+              <img src="../img2/slidp2.png">
+              <img src="../img2/slidp2.png">
+          </div>
+          <!-- womensanjiao -->
+          <img src='../img2/women.png' class="ani women" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.0s"/><!-- 
+          <img src='../img2/xiaoyun.png' class="ani xiaoyun" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.0s"/>
+          <img src='../img2/dayun.png' class="ani dayun" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.0s"/> -->
+
+          <img src='../img2/xiaoyun.png' class="xiaoyun" />
+          <img src='../img2/dayun.png' class="dayun"/>
+          <img src='../img2/freetxt.png' class="ani freetxt" swiper-animate-effect="zoomInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.0s"/>
+          <img src='../img2/youqian.png' class="ani youqian" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s" swiper-animate-delay="0.0s"/>
+          <img src='../img2/yuanyun.png' class="ani yuanyun" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s" swiper-animate-delay="0.0s"/>
+          <img src="../img2/qiqiu.png" class='qiqiu' />
+          <img src="../img2/shangcha.png" class='shangcha' />
+          <img src="../img2/xiacha.png" class='xiacha' />
+        </div>
+
+
+
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 6</div>
+    </div>
+</div>
+
+
+
+
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/zepto.tap.js"></script>
+<script src="../js/swiper-3.4.2.min.js"></script>
+<script src="../js/swipe.animation.min.js"></script>
+<script src="../js/zepto.animate.js"></script>
+<script src="../js/mainP1.js"></script>
+</body>
+</html>
